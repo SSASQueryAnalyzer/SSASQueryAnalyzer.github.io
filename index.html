@@ -1,0 +1,304 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+ <!--<![endif]-->
+<head>
+    <title>SSASQueryAnalyzer</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/plugins/flexslider/flexslider.css">
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <!-- asqa-bootstrap -->
+    <link rel="stylesheet" href="assets/css/asqa-bootstrap.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="home-page">
+    <!-- ******HEADER****** -->
+    <header id="header" class="header navbar-fixed-top">
+        <div class="container">
+            <h1 class="logo">
+                <a href="index.html">
+                    <span class="text">ASQA</span>
+                </a>
+            </h1><!--//logo-->
+            <nav class="main-nav navbar-right" role="navigation">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button><!--//nav-toggle-->
+                </div><!--//navbar-header-->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active nav-item"><a href="index.html">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">Product<i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="features.html">Features</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="about.html">About</a></li>
+                            </ul>
+                        </li><!--//dropdown-->
+                        <li class="nav-item dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">Support<i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="https://github.com/SSASQueryAnalyzer" target="_blank">Source code</a></li>
+                            </ul>
+                        </li><!--//dropdown-->
+                    </ul><!--//nav-->
+                </div><!--//navabr-collapse-->
+            </nav><!--//main-nav-->
+        </div><!--//container-->
+    </header><!--//header-->
+
+    <div class="headline-bg index-headline-bg"> </div><!--//headline-bg-->
+
+    <section class="promo section section-on-bg" style="padding-top: 60px;">
+        <div class="container text-center" style="top: 60px;">
+            <h7 class="title">Troubleshooting MDX queries has never been so easy!</h7>
+            <p class="intro">
+                <strong>SQL Server Management Studio</strong> + <strong>Analysis Services Query Analyzer</strong>
+                <br>One tool, one click … that’s all!
+            </p>
+            <p><a class="btn btn-cta btn-cta-secondary" href="https://github.com/SSASQueryAnalyzer/SSASQueryAnalyzer/releases" target="_blank" onclick="gaSendEventDownload()">Download</a></p>
+        </div>
+    </section>
+
+    <div class="sections-wrapper">
+
+        <section class="section cta-section text-center home-cta-section" id="cta-section"
+                 style="height: 1px; background-image: none; padding-top: 0px; padding-bottom: 0px; "></section>
+
+        <section class="section cta-section text-center home-cta-section" id="cta-section" style="background-image: none; background-color: #ffffff; color: #ec6952; padding-top: 10px; padding-bottom: 10px; ">
+            <img height="84" style="padding-top: 10px; padding-bottom: 10px; " src="assets\images\icons\ASQA_Logo_64x64.png">
+            <div class="container text-center">
+                <p class="title" style="padding-top: 0px; padding-bottom: 0px; font-size: 48px; margin-bottom: 0px;"><strong>Five reasons to use it!</strong></p>
+            </div>
+        </section>
+
+        <section class="section cta-section text-center home-cta-section" id="cta-section"
+                 style="height: 1px; background-image: none; padding-top: 0px; padding-bottom: 0px; "></section>
+
+        <section class="steps section" style="padding-top: 20px; padding-bottom: 0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="step text-center col-md-15 col-sm-3">
+                        <figure class="profile"><img alt="" src="assets\images\home\reasons\TimeSaving_orange_102x102.png"></figure>
+                        <h3 class="title"><span class="text">Time saving</span></h3>
+                        <h5 class="text-justify">
+                            Troubleshooting MDX  queries can be a complex and time-consuming activity that requires the manual execution of many and repetitive tasks using different tools.
+                            Using <strong>Analysis Services Query Analyzer</strong>, you can forget all the complexities and drastically reduce the time spent to execute your analysis.
+                        </h5>
+                    </div><!--//step-->
+                    <div class="step text-center col-md-15 col-sm-3">
+                        <figure class="profile"><img alt="" src="assets\images\home\reasons\Effortless_orange_102x102.png"></figure>
+                        <h3 class="title"><span class="text">Effortless</span></h3>
+                        <h5 class="text-justify">
+                            Everything in <strong>Analysis Services Query Analyzer</strong> is simple.
+                            Very simple to execute tests and collect all data and metrics and very easy to analyze the data to understand what happened during the resolution of the query.
+                            In addition, it is even more simple since the tool is completely integrated in SQL Server Management Studio!
+                        </h5>
+                    </div><!--//step-->
+                    <div class="step text-center col-md-15 col-sm-3">
+                        <figure class="profile"><img alt="" src="assets\images\home\reasons\Reliable_orange_102x102.png"></figure>
+                        <h3 class="title"><span class="text">Reliable</span></h3>
+                        <h5 class="text-justify">
+                            Manually executing all the tasks for collecting performance data of MDX queries can be a boring activity that intrinsically implies the possibility to make mistakes.
+                            <strong>Analysis Services Query Analyzer</strong> simply eliminates this risk: each task will always be executed under the same conditions, in the right way and with the right configurations.
+                        </h5>
+                    </div><!--//step-->
+                    <div class="step text-center col-md-15 col-sm-3">
+                        <figure class="profile"><img alt="" src="assets\images\home\reasons\Compliant_orange_102x102.png"></figure>
+                        <h3 class="title"><span class="text">Compliant</span></h3>
+                        <h5 class="text-justify">
+                            Collecting data and metrics for troubleshooting MDX queries require to follow specific rules and best practices to guarantee the quality and reliability of diagnosis.
+                            <strong>Analysis Services Query Analyzer</strong> automatically does it for you behind the scenes allowing to achieve the most accurate and useful results.
+                        </h5>
+                    </div><!--//step-->
+                    <div class="step text-center col-md-15 col-sm-3">
+                        <figure class="profile"><img alt="" src="assets\images\home\reasons\Powerful_orange_102x102.png"></figure>
+                        <h3 class="title"><span class="text">Powerful</span></h3>
+                        <h5 class="text-justify">
+                            The variety of data and metrics that the tool automatically collects, together with the complexity of analysis that it allows to execute, make <strong>Analysis Services Query Analyzer</strong> your best and unchangeable tool for your daily troubleshooting activity.
+                        </h5>
+                    </div><!--//step-->
+                </div>
+            </div>
+        </section>
+
+        <section class="section cta-section text-center home-cta-section" id="cta-section"
+                 style="background-image: none; background-color: #ec6952; padding-top: 10px; padding-bottom: 10px; ">
+            <h2 class="title text-center" style="height: 120px; padding-bottom: 0px; margin-bottom: 0px;">
+                Born from our everyday experience with MDX troubleshooting,
+                <br><strong>Analysis Services Query Analyzer</strong> has been designed and developed with one main goal:
+                <br><strong>to save you time and effort!</strong>
+            </h2>
+        </section>
+
+        <section class="section why" id="why" style="padding-top: 10px; padding-bottom: 0px;">
+            <div class="container">
+
+                <div class="row item" style="height: 160px; padding-top: 10px; padding-bottom: 10px;">
+                    <div class=" content col-md-push-1 col-sm-push-0 col-xs-push-0 col-xs-12 col-md-4">
+                        <figure class="profile"><img src="assets\images\home\help\LiveMode_transparent_100x100.png" style="padding-left: 10px;" /></figure>
+                        <h3 class="title">Live Mode</h3>
+                    </div>
+                    <div class="content col-md-pull-1 col-sm-pull-0 col-xs-pull-0 col-xs-12 col-md-7">
+                        <div class="text-justify" style="width: 745px; padding-top: 5px;">
+                            <strong>Live Mode</strong> execution is the simplest way of using <strong>Analysis Services Query Analyzer</strong>.
+                            <br>Open your <strong>SQL Server Management Studio</strong>, write your <strong>MDX</strong> query, execute the analysis against your <strong>test environment</strong> and then analyze all the results with your <strong>ASQA SSMS Addin</strong>.
+                            <br>That’s all!
+                            <br>Simple, fast and powerful!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row item" style="height: 265px; padding-top: 20px; padding-bottom: 10px;">
+                    <div class="content col-md-push-8 col-sm-push-0 col-xs-push-0 col-xs-12 col-md-4">
+                        <figure class="profile"><img src="assets\images\home\help\BatchMode_transparent_100x100.png" style="padding-top: 45px; padding-left: 138px;" /></figure>
+                        <h3 class="title" style="width: 300px; padding-left: 118px;">Batch Mode</h3>
+                    </div>
+                    <div class="content col-md-pull-3 col-sm-pull-0 col-xs-pull-0 col-xs-12 col-md-7">
+                        <div class="text-justify" style="width: 745px;">
+                            With <strong>Batch Mode</strong> execution, <strong>all the analysis results are saved in the ASQA SQL Server Database</strong>, and this capability opens to more usage scenarios.
+                            <br />Here is a couple of them:
+                            <ul>
+                                <li>Execute <strong>all</strong> your analysis in <strong>Batch Mode</strong> and save <strong>all the results</strong> in the <strong>ASQA SQL Server Database</strong>. In this way, you will build an <strong>historical archive</strong> of all your analysis that allows you to easily compare the performance of the same query in <strong>different points in time</strong> and/or on <strong>different environments</strong>.</li>
+                                <li>Ask to your users/customers to install <strong>ASQA SSMS Addin</strong> on their <strong>SQL Server Management Studio</strong> and to execute their own analysis on their critical <strong>MDX</strong> queries in <strong>Batch Mode</strong>, saving all the results in the <strong>ASQA SQL Server Database</strong>. You can <strong>analyze the results later</strong>, simply loading them with your <strong>ASQA SSMS Addin</strong>.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row item" style="height: 200px; padding-top: 20px; padding-bottom: 10px;">
+                    <div class="content col-md-push-1 col-sm-push-0 col-xs-push-0 col-xs-12 col-md-4">
+                        <figure class="profile"><img src="assets\images\home\help\SQLAzureDatabase_transparent_100x100.png" style="padding-top: 20px; padding-left: 70px;" /></figure>
+                        <h3 class="title">Azure SQL Database</h3>
+                    </div>
+                    <div class="content col-md-pull-0 col-sm-pull-0 col-xs-pull-0 col-xs-12 col-md-7">
+                        <div class="text-justify" style="width: 650px;">
+                            The possibility, in <strong>Batch Mode</strong> execution, to save all the analysis results in an <strong>Azure SQL Database</strong> offers further scenarios to the usage of <strong>Analysis Services Query Analyzer</strong>.
+                            <br>One for all: let your users/customers <strong>execute their own analysis</strong> on their critical <strong>MDX</strong> queries in <strong>Batch Mode</strong> giving them access to store all the results in an <strong>Azure SQL Database</strong>. In this way, you could analyze their results <strong>without leaving your office</strong> (or home!) and <strong>without</strong> the need to <strong>have access to their environment</strong>.
+                            <br>Simply priceless!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row item" style="height: 225px; padding-top: 20px; ">
+                    <div class="content col-md-push-8 col-sm-push-0 col-xs-push-0 col-xs-12 col-md-4">
+                        <figure class="profile"><img src="assets\images\home\help\PowerShell_transparent_100x100.png" style="padding-top: 30px; padding-left: 143px;" /></figure>
+                        <h3 class="title" style="width: 300px; padding-left: 130px;">PowerShell</h3>
+                    </div>
+                    <div class="content col-md-pull-3 col-sm-pull-0 col-xs-pull-0 col-xs-12 col-md-7">
+                        <div class="text-justify" style="width: 745px;">
+                            A <strong>Batch Mode</strong> analysis can be launched by simply making a call to the <strong>ASQA SSAS Assembly</strong>. This allows the execution of the analyses by using a <strong>PowerShell</strong> script (or any other scripting language able to connect to an <strong>SSAS instance</strong>) and, for instance, by <strong>scheduling</strong> its execution.
+                            <br />What does it mean?
+                            <br />During the day, save, or ask to your users/customers to save (for example on a shared folder) all critical MDX query (in text format). Configure the <strong>PowerShell</strong> script provided with the installation kit of <strong>Analysis Services Query Analyzer</strong> and schedule its execution during the night.
+                            Every morning you can easily analyze the results of all analyses simply using your <strong>ASQA SSMS Addin</strong>.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row item" style="height: 180px; padding-top: 20px; padding-bottom: 10px;">
+                    <div class="content col-md-push-1 col-sm-push-0 col-xs-push-0 col-xs-12 col-md-4">
+                        <figure class="profile"><img src="assets\images\home\help\Installation_transparent_100x100.png" style="padding-top: 10px; padding-left: 50px;" /></figure>
+                        <h3 class="title">Easy installation</h3>
+                    </div>
+                    <div class="content col-md-pull-0 col-sm-pull-0 col-xs-pull-0 col-xs-12 col-md-7">
+                        <div class="text-justify" style="width: 650px;">
+                            Installing <strong>Analysis Services Query Analyzer</strong> simply requires to install the <strong>SSMS ASQA Addin</strong> inside your <strong>SQL Server Management Studio</strong>.
+                            We decided to provide a <strong>PowerShell script</strong> (instead of a setup application) to automate this task, because in this way everyone can easily check what the script does and, possibly, change its behaviour.
+                            Once the <strong>SSMS ASQA Addin</strong> is installed, it allows to easily install/uninstall and configure the <strong>SSAS ASQA Assembly</strong> and the <strong>SQL Server ASQA Database</strong> (on premise or on Azure) used by the tool.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-lead text-center">
+                    <h2 class="title" style="margin-top: 10px;">Discover all the features!</h2>
+                    <p><a class="btn btn-cta btn-cta-secondary" href="features.html">Take a Tour</a></p>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+    <!-- ******FOOTER****** -->
+    <footer class="footer" style="padding-top: 0px;">
+        <div class="footer-content">
+            <div class="container">
+                <div>
+                    <br />
+                    <p class="text-center" style="color:whitesmoke;font-size:150%;">Do you like ASQA? Spread the word!</p>
+                    <center>
+                        <a class="btn btn-cta btn-cta-secondary" href="https://goo.gl/vSvBnr">Download video</a>
+                        <a class="btn btn-cta btn-cta-secondary" href="https://goo.gl/56Ks4B">Download Outlook signature banner</a>
+                    </center>
+                </div>
+                <div class="row" style="height: 140px; padding-top: 0px; padding-bottom: 0px;">
+                    <div class="footer-col connect col-xs-12 col-md-12" style="margin-bottom: 10px;">
+                        <div class="section cta-section text-center home-cta-section " id="cta-section" style="height: 100px; padding-top: 0px; padding-bottom: 0px; margin-top: 27px;"></div>
+                    </div><!--//foooter-col-->
+                </div>
+            </div><!--//container-->
+        </div>
+    </footer><!--//footer-->
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="assets/plugins/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap-hover-dropdown.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-placeholder/jquery.placeholder.js"></script>
+    <script type="text/javascript" src="assets/plugins/FitVids/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="assets/plugins/flexslider/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-83860081-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <script>
+        var gaSendEventDownload = function () {
+            ga('send', 'event', {
+                eventCategory: 'addin',
+                eventAction: 'download',
+                eventLabel: '',
+                transport: 'beacon'
+            });
+        }
+    </script>
+
+</body>
+</html>
