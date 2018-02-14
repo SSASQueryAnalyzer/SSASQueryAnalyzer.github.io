@@ -64,7 +64,7 @@
                                 <li><a href="contact.html">Contact</a></li>
                                 <li><a href="https://github.com/SSASQueryAnalyzer" target="_blank">Source code</a></li>
                             </ul>
-                        </li><!--//dropdown-->                        
+                        </li><!--//dropdown-->
                     </ul><!--//nav-->
                 </div><!--//navabr-collapse-->
             </nav><!--//main-nav-->
@@ -80,15 +80,14 @@
                 <strong>SQL Server Management Studio</strong> + <strong>Analysis Services Query Analyzer</strong>
                 <br>One tool, one click … that’s all!
             </p>
-            <p><a class="btn btn-cta btn-cta-secondary" href="https://github.com/SSASQueryAnalyzer/SSASQueryAnalyzer/releases" target="_blank" onclick="gaSendEventDownload()">Download</a></p>
+            <p><a class="btn btn-cta btn-cta-secondary" href="https://github.com/SSASQueryAnalyzer/SSASQueryAnalyzer/releases" target="_blank" onclick="gaSendEventDownload('addin')">Download</a></p>
         </div>
     </section>
 
     <div class="sections-wrapper">
 
         <section class="section cta-section text-center home-cta-section" id="cta-section"
-                 style="height: 1px; background-image: none; padding-top: 0px; padding-bottom: 0px; ">
-        </section>
+                 style="height: 1px; background-image: none; padding-top: 0px; padding-bottom: 0px; "></section>
         <section class="section cta-section text-center home-cta-section" id="cta-section" style="background-image: none; background-color: #ffffff; color: #ec6952; padding-top: 10px; padding-bottom: 10px; ">
             <img height="84" style="padding-top: 10px; padding-bottom: 10px; " src="assets\images\icons\ASQA_Logo_64x64.png">
             <div class="container text-center">
@@ -96,8 +95,7 @@
             </div>
         </section>
         <section class="section cta-section text-center home-cta-section" id="cta-section"
-                 style="height: 1px; background-image: none; padding-top: 0px; padding-bottom: 0px; ">
-        </section>
+                 style="height: 1px; background-image: none; padding-top: 0px; padding-bottom: 0px; "></section>
 
         <!-- ******FAQ Section****** -->
         <section class="faq section has-bg-color" style="padding-top: 30px; padding-bottom: 20px;">
@@ -146,10 +144,10 @@
                             <div class="panel-collapse collapse" id="faq03">
                                 <div class="panel-body">
                                     <strong>Analysis Services Query Analyzer (ASQA)</strong> is the combination of an <strong>Analysis Service custom assembly</strong>
-                                    and an <strong>SQL Server Management Studio Addin</strong> (technically speaking, the correct term is <strong>VS Package</strong>). 
-                                    The former represents the engine of the tool and has the responsibility to execute all the required tasks to collect performance 
-                                    data and metrics of an <strong>MDX query</strong> following and respecting all the best practices. 
-                                    It must be installed on the same <strong>SSAS Multidimensional instance</strong> where the <strong>MDX query performance analysis</strong> will be executed. 
+                                    and an <strong>SQL Server Management Studio Addin</strong> (technically speaking, the correct term is <strong>VS Package</strong>).
+                                    The former represents the engine of the tool and has the responsibility to execute all the required tasks to collect performance
+                                    data and metrics of an <strong>MDX query</strong> following and respecting all the best practices.
+                                    It must be installed on the same <strong>SSAS Multidimensional instance</strong> where the <strong>MDX query performance analysis</strong> will be executed.
                                     The latter has the responsibility of calling the execution of the analysis and presenting the results inside <strong>SQL Server Management Studio</strong>.
                                 </div>
                             </div>
@@ -187,11 +185,11 @@
                             </div>
                             <div class="panel-collapse collapse" id="faq05">
                                 <div class="panel-body">
-                                    The current version of <strong>Analysis Services Query Analyzer (ASQA)</strong> fully supports all the versions of 
-                                    <strong>Analysis Services Multidimensional</strong> starting from the <strong>2012 version (Build number: 11.0.x.x)</strong>, and the <strong>ASQA Addin</strong> 
+                                    The current version of <strong>Analysis Services Query Analyzer (ASQA)</strong> fully supports all the versions of
+                                    <strong>Analysis Services Multidimensional</strong> starting from the <strong>2012 version (Build number: 11.0.x.x)</strong>, and the <strong>ASQA Addin</strong>
                                     can be installed in all the versions of <strong>SQL Server Management Studio</strong> starting from the <strong>2012 version (Build number: 11.0.x.x)</strong>.
                                     It can also save all the analyses results in a dedicated database hosted in any version of <strong>SQL Server</strong> on premise starting from the <strong>2012 version (Build number: 11.0.x.x)</strong>
-                                    as well as on <strong>Azure SQL Database</strong>. 
+                                    as well as on <strong>Azure SQL Database</strong>.
                                 </div>
                             </div>
                         </div>
@@ -313,8 +311,8 @@
                     <br />
                     <p class="text-center" style="color:whitesmoke;font-size:150%;">Do you like ASQA? Spread the word!</p>
                     <center>
-                        <a class="btn btn-cta btn-cta-secondary" href="https://goo.gl/vSvBnr">Download video</a>
-                        <a class="btn btn-cta btn-cta-secondary" href="https://goo.gl/56Ks4B">Download Outlook signature banner</a>
+                        <a class="btn btn-cta btn-cta-secondary" href="https://goo.gl/vSvBnr" target="_blank" onclick="gaSendEventDownload('gadget-video')">Download video</a>
+                        <a class="btn btn-cta btn-cta-secondary" href="https://goo.gl/56Ks4B" target="_blank" onclick="gaSendEventDownload('gadget-outlook')">Download Outlook signature banner</a>
                     </center>
                 </div>
                 <div class="row" style="height: 140px; padding-top: 0px; padding-bottom: 0px;">
@@ -325,7 +323,6 @@
             </div><!--//container-->
         </div>
     </footer><!--//footer-->
-
     <!-- Javascript -->
     <script type="text/javascript" src="assets/plugins/jquery-1.12.3.min.js"></script>
     <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
@@ -348,9 +345,9 @@
     </script>
 
     <script>
-        var gaSendEventDownload = function () {
+        var gaSendEventDownload = function (category) {
             ga('send', 'event', {
-                eventCategory: 'addin',
+                eventCategory: category,
                 eventAction: 'download',
                 eventLabel: '',
                 transport: 'beacon'

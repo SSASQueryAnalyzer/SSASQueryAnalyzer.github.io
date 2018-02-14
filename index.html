@@ -83,7 +83,7 @@
                 <strong>SQL Server Management Studio</strong> + <strong>Analysis Services Query Analyzer</strong>
                 <br>One tool, one click … that’s all!
             </p>
-            <p><a class="btn btn-cta btn-cta-secondary" href="https://github.com/SSASQueryAnalyzer/SSASQueryAnalyzer/releases" target="_blank" onclick="gaSendEventDownload()">Download</a></p>
+            <p><a class="btn btn-cta btn-cta-secondary" href="https://github.com/SSASQueryAnalyzer/SSASQueryAnalyzer/releases" target="_blank" onclick="gaSendEventDownload('addin')">Download</a></p>
         </div>
     </section>
 
@@ -254,8 +254,8 @@
                     <br />
                     <p class="text-center" style="color:whitesmoke;font-size:150%;">Do you like ASQA? Spread the word!</p>
                     <center>
-                        <a class="btn btn-cta btn-cta-secondary" href="https://goo.gl/vSvBnr">Download video</a>
-                        <a class="btn btn-cta btn-cta-secondary" href="https://goo.gl/56Ks4B">Download Outlook signature banner</a>
+                        <a class="btn btn-cta btn-cta-secondary" href="https://goo.gl/vSvBnr" target="_blank" onclick="gaSendEventDownload('gadget-video')">Download video</a>
+                        <a class="btn btn-cta btn-cta-secondary" href="https://goo.gl/56Ks4B" target="_blank" onclick="gaSendEventDownload('gadget-outlook')">Download Outlook signature banner</a>
                     </center>
                 </div>
                 <div class="row" style="height: 140px; padding-top: 0px; padding-bottom: 0px;">
@@ -290,9 +290,9 @@
     </script>
 
     <script>
-        var gaSendEventDownload = function () {
+        var gaSendEventDownload = function (category) {
             ga('send', 'event', {
-                eventCategory: 'addin',
+                eventCategory: category,
                 eventAction: 'download',
                 eventLabel: '',
                 transport: 'beacon'
